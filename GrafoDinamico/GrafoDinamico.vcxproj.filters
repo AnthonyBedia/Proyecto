@@ -18,10 +18,10 @@
     <ClCompile Include="GrafoDinamico.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Vertice.cpp">
+    <ClCompile Include="Vertex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Arista.cpp">
+    <ClCompile Include="Edge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Grafo.cpp">
@@ -29,10 +29,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Vertice.h">
+    <ClInclude Include="Vertex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Arista.h">
+    <ClInclude Include="Edge.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Grafo.h">

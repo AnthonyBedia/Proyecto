@@ -6,85 +6,80 @@ int main()
 {
 	Grafo* grafo = new Grafo();
 	int opc = 0;
+	grafo->AddVertex("A");
+	grafo->AddVertex("B");
+	grafo->AddVertex("C");
+	grafo->AddVertex("D");
+	grafo->AddVertex("E");
 
 
-	grafo->InsertaVertice("A");
-	grafo->InsertaVertice("B");
-	grafo->InsertaVertice("C");
-	grafo->InsertaVertice("D");
-	grafo->InsertaVertice("E");
-	grafo->InsertaVertice("F");
-	grafo->InsertaVertice("G");
-	grafo->InsertaArista("A", "B", 7);
-	grafo->InsertaArista("A", "D", 5);
-	grafo->InsertaArista("B", "A", 7);
-	grafo->InsertaArista("B", "C", 8);
-	grafo->InsertaArista("B", "D", 9);
-	grafo->InsertaArista("B", "E", 7);
-	grafo->InsertaArista("C", "B", 8);
-	grafo->InsertaArista("C", "E", 5);
-	grafo->InsertaArista("D", "A", 5);
-	grafo->InsertaArista("D", "B", 9);
-	grafo->InsertaArista("D", "E", 15);
-	grafo->InsertaArista("D", "F", 6);
-	grafo->InsertaArista("E", "B", 7);
-	grafo->InsertaArista("E", "C", 5);
-	grafo->InsertaArista("E", "D", 15);
-	grafo->InsertaArista("E", "F", 8);
-	grafo->InsertaArista("E", "G", 9);
-	grafo->InsertaArista("F", "D", 6);
-	grafo->InsertaArista("F", "E", 8);
-	grafo->InsertaArista("F", "G", 11);
-	grafo->InsertaArista("G", "E", 9);
-	grafo->InsertaArista("G", "F", 11);
+	/*grafo->AddVertex("A");
+	grafo->AddVertex("B");
+	grafo->AddVertex("C");
+	grafo->AddVertex("D");
+	grafo->AddVertex("E");
+	grafo->AddVertex("F");
+	grafo->AddVertex("G");
+	grafo->AddEdge("A", "B", 7);
+	grafo->AddEdge("A", "D", 5);
+	grafo->AddEdge("B", "A", 7);
+	grafo->AddEdge("B", "C", 8);
+	grafo->AddEdge("B", "D", 9);
+	grafo->AddEdge("B", "E", 7);
+	grafo->AddEdge("C", "B", 8);
+	grafo->AddEdge("C", "E", 5);
+	grafo->AddEdge("D", "A", 5);
+	grafo->AddEdge("D", "B", 9);
+	grafo->AddEdge("D", "E", 15);
+	grafo->AddEdge("D", "F", 6);
+	grafo->AddEdge("E", "B", 7);
+	grafo->AddEdge("E", "C", 5);
+	grafo->AddEdge("E", "D", 15);
+	grafo->AddEdge("E", "F", 8);
+	grafo->AddEdge("E", "G", 9);
+	grafo->AddEdge("F", "D", 6);
+	grafo->AddEdge("F", "E", 8);
+	grafo->AddEdge("F", "G", 11);
+	grafo->AddEdge("G", "E", 9);
+	grafo->AddEdge("G", "F", 11);*/
 
-	/*grafo->InsertaVertice("A");
-	grafo->InsertaVertice("B");
-	grafo->InsertaVertice("C");
-	grafo->InsertaVertice("D");
-	grafo->InsertaVertice("E");
-	grafo->InsertaVertice("F");
-	grafo->InsertaVertice("G");
-	grafo->InsertaArista("A", "A", 13);
-	grafo->InsertaArista("A", "D", 8);
-	grafo->InsertaArista("B", "B", 52);
-	grafo->InsertaArista("B", "C", 17);
-	grafo->InsertaArista("B", "D", 83);
-	grafo->InsertaArista("B", "F", 97);
-	grafo->InsertaArista("B", "G", 60);
-	grafo->InsertaArista("C", "A", 4);
-	grafo->InsertaArista("D", "B", 97);
-	grafo->InsertaArista("D", "C", 37);
-	grafo->InsertaArista("D", "D", 22);
-	grafo->InsertaArista("D", "E", 41);
-	grafo->InsertaArista("D", "G", 64);
-	grafo->InsertaArista("E", "B", 8);
-	grafo->InsertaArista("E", "E", 45);
-	grafo->InsertaArista("E", "F", 92);
-	grafo->InsertaArista("F", "A", 12);
-	grafo->InsertaArista("F", "B", 8);
-	grafo->InsertaArista("F", "E", 42);
-	grafo->InsertaArista("G", "D", 17);*/
+	/*grafo->AddVertex("A");
+	grafo->AddVertex("B");
+	grafo->AddVertex("C");
+	grafo->AddVertex("D");
+	grafo->AddVertex("E");
+	grafo->AddVertex("F");
+	grafo->AddVertex("G");
+	grafo->AddEdge("A", "A", 13);
+	grafo->AddEdge("A", "D", 8);
+	grafo->AddEdge("B", "B", 52);
+	grafo->AddEdge("B", "C", 17);
+	grafo->AddEdge("B", "D", 83);
+	grafo->AddEdge("B", "F", 97);
+	grafo->AddEdge("B", "G", 60);
+	grafo->AddEdge("C", "A", 4);
+	grafo->AddEdge("D", "B", 97);
+	grafo->AddEdge("D", "C", 37);
+	grafo->AddEdge("D", "D", 22);
+	grafo->AddEdge("D", "E", 41);
+	grafo->AddEdge("D", "G", 64);
+	grafo->AddEdge("E", "B", 8);
+	grafo->AddEdge("E", "E", 45);
+	grafo->AddEdge("E", "F", 92);
+	grafo->AddEdge("F", "A", 12);
+	grafo->AddEdge("F", "B", 8);
+	grafo->AddEdge("F", "E", 42);
+	grafo->AddEdge("G", "D", 17);*/
 
-	while (opc != 16)
+	while (opc != 6)
 	{
 		system("cls");
 		cout << "1. Insertar vertice" << endl;
 		cout << "2. Insertar arista" << endl;
-		cout << "3. Obtener tamano" << endl;
-		cout << "4. Mostrar lista de adyacencia" << endl;
-		cout << "5. Eliminar vertice" << endl;
-		cout << "6. Eliminar arista" << endl;
-		cout << "7. Eliminar todo" << endl;
-		cout << "8. Recorrido en anchura" << endl;
-		cout << "9. Recorrido en profundidad" << endl;
-		cout << "10. Primero en anchura" << endl;
-		cout << "11. Primero en profundidad" << endl;
-		cout << "12. Primero el mejor" << endl;
-		cout << "13. Dijkstra" << endl;
-		cout << "14. Kruskal" << endl;
-		cout << "15. Prim" << endl;
-		cout << "16. Salir" << endl;
+		cout << "3. Ver tamanio" << endl;
+		cout << "4. Mostrar matriz/lista de adyacencia" << endl;
+		cout << "5. Ejecutar algoritmo de Prim" << endl;
+		cout << "6. Salir" << endl;
 
 		cout << endl;
 		cout << "Ingrese una opcion del menu: ";
@@ -96,210 +91,68 @@ int main()
 		{
 		case 1:
 		{
-			string nombre;
+			string name;
 			cout << "Ingrese el nombre del vertice: ";
-			cin >> nombre;
+			cin >> name;
 
-			grafo->InsertaVertice(nombre);
+			grafo->AddVertex(name);
 
 			break;
 		}
 		case 2:
 		{
-			if (grafo->EstaVacio())
+			if (grafo->IsEmpty())
 				cout << "El grafo esta vacio" << endl;
 			else
 			{
 				string ori, dest;
-				int precio;
-				cout << "Ingrese el nombre del vertice origen: ";
+				int weight;
+				cout << "Ingrese el nombre del vertice de origen: ";
 				cin >> ori;
-				cout << "Ingrese el nombre del vertice destino: ";
+				cout << "Ingrese el nombre del vertice destinatario: ";
 				cin >> dest;
-				cout << "Ingrese el precio: ";
-				cin >> precio;
+				cout << "Ingrese el peso: ";
+				cin >> weight;
 
-				grafo->InsertaArista(ori, dest, precio);
+				grafo->AddEdge(ori, dest, weight);
+				char rpta = ' ';
+				cout << "Desea insertar arista: " << dest << "-->" << ori << "?";
+				cin >> rpta; 
+				if (rpta == 's' || rpta == 'S')
+					grafo->AddEdge(dest, ori, weight);
+				else
+					break;
 			}
 
 			break;
 		}
 		case 3:
 		{
-			int tamano = grafo->ObtenerTamano();
-			cout << "El grafo tiene " << tamano << " vertices" << endl;
+			int size = grafo->GetSize();
+			cout << "El grafo tiene " << size << " vertices" << endl;
 
 			break;
 		}
 		case 4:
 		{
-			if (grafo->EstaVacio())
+			if (grafo->IsEmpty())
 				cout << "El grafo esta vacio" << endl;
 			else
-				grafo->MostrarListaAdyacencia();
+				grafo->ShowAdjacencyList();
 
 			break;
 		}
 		case 5:
 		{
-			if (grafo->EstaVacio())
+			if (grafo->IsEmpty())
 				cout << "El grafo esta vacio" << endl;
 			else
 			{
-				string nombre;
-				cout << "Ingrese el nombre del vertice a eliminar: ";
-				cin >> nombre;
+				string name;
+				cout << "Ingrese el nombre del vertice de origen: ";
+				cin >> name;
 
-				grafo->EliminarVertice(nombre);
-			}
-			
-			break;
-		}
-		case 6:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				string ori, dest;
-				cout << "Ingrese el nombre del vertice origen: ";
-				cin >> ori;
-				cout << "Ingrese el nombre del vertice destino: ";
-				cin >> dest;
-
-				grafo->EliminarArista(ori, dest);
-			}
-			break;
-		}
-		case 7:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				grafo->EliminarTodo();
-			}
-
-			break;
-		}
-		case 8:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				string nombre;
-				cout << "Ingrese el nombre del vertice origen: ";
-				cin >> nombre;
-
-				grafo->RecorridoAnchura(nombre);
-			}
-
-			break;
-		}
-		case 9:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				string nombre;
-				cout << "Ingrese el nombre del vertice origen: ";
-				cin >> nombre;
-
-				grafo->RecorridoProfundidad(nombre);
-			}
-
-			break;
-		}
-		case 10:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				string ori, dest;
-				cout << "Ingrese el nombre del vertice origen: ";
-				cin >> ori;
-				cout << "Ingrese el nombre del vertice destino: ";
-				cin >> dest;
-
-				grafo->PrimeroEnAnchura(ori, dest);
-			}
-
-			break;
-		}
-		case 11:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				string ori, dest;
-				cout << "Ingrese el nombre del vertice origen: ";
-				cin >> ori;
-				cout << "Ingrese el nombre del vertice destino: ";
-				cin >> dest;
-
-				grafo->PrimeroEnProfundidad(ori, dest);
-			}
-
-			break;
-		}
-		case 12:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				string ori, dest;
-				cout << "Ingrese el nombre del vertice origen: ";
-				cin >> ori;
-				cout << "Ingrese el nombre del vertice destino: ";
-				cin >> dest;
-
-				grafo->PrimeroElMejor(ori, dest);
-			}
-
-			break;
-		}
-		case 13:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				string ori;
-				cout << "Ingrese el nombre del vertice origen: ";
-				cin >> ori;
-
-				grafo->Dijkstra(ori);
-			}
-
-			break;
-		}
-		case 14:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				grafo->Kruskal();
-			}
-
-			break;
-		}
-		case 15:
-		{
-			if (grafo->EstaVacio())
-				cout << "El grafo esta vacio" << endl;
-			else
-			{
-				string nombre;
-				cout << "Ingrese el nombre del vertice origen: ";
-				cin >> nombre;
-
-				grafo->Prim(nombre);
+				grafo->Prim(name);
 			}
 
 			break;
